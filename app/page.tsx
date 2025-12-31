@@ -9,14 +9,14 @@ import BlobBackground from "@/components/BlobBackground";
 const projects = [
   {
     title: "Portfolio Website",
-    description: "My personal portfolio built with Next.js, TypeScript, Tailwind CSS.",
+    description: "My personal portfolio built with Next.js, TypeScript, Tailwind CSS and deployed on Vercel.",
     link: "https://github.com/pavansai2299/my-portfolio",
   },
   {
-    title: "Todo App",
-    description: "CRUD Todo app using React + TypeScript",
-    link: "https://github.com/YOUR_GITHUB/todo-app",
-  },
+    title: "Photo Wall App",
+    description: "PhotoWall is a web application where users can add posts along with comments and helps in persisting the state using firebase.",
+    link: "https://github.com/pavansai2299/PhotoWall",
+  }
 ];
 
 export default function Home() {
@@ -57,6 +57,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.2 }}
+              className="h-full"
             >
               <ProjectCard {...project} />
             </motion.div>
